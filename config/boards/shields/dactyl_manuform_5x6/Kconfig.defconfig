@@ -19,5 +19,11 @@ if SHIELD_DACTYL_MANUFORM_5x6_LEFT || SHIELD_DACTYL_MANUFORM_5x6_RIGHT
 
     config ZMK_SPLIT
         default y
+    
+    config CONFIG_CLOCK_CONTROL_NRF
+        default y
+
+    config CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC
+        default y
 
 endif
