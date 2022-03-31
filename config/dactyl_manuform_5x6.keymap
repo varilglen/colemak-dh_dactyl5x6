@@ -33,8 +33,8 @@
                 &kp ESC    &hm LSHIFT A  &hm LALT S  &hm LCTRL D  &hm LGUI F  &kp G               &kp H  &hm RGUI J  &hm RCTRL K     &hm RALT L   &hm RSHIFT SEMI &kp SQT
                 &kp LSHIFT &kp Z         &kp X       &kp C        &kp V       &kp B               &kp N  &kp M       &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
                                   &kp EQUAL &kp PLUS                                              &kp LBKT  &kp RBKT
-                                            &kp BSPC   &kp LWR                                    &kp RET   &kp SPACE
-                                            &mo LGUI   &kp F18                                    &kp F18   &mo RSE
+                                            &kp BSPC   &mo LWR                                    &kp RET   &kp SPACE
+                                            &kp LGUI   &kp F18                                    &kp F18   &mo RSE
                                             &kp LCTRL  &kp LALT                                   &kp RALT  &kp RCTRL
             >;
         };
