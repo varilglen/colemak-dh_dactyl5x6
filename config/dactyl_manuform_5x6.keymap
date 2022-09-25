@@ -17,21 +17,21 @@
             bindings = <
                 &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5              &kp N6  &kp N7  &kp N8     &kp N9  &kp N0    &kp MINUS
                 &kp TAB    &kp Q   &kp W   &kp F   &kp P   &kp B               &kp J   &kp L   &kp U      &kp Y   &kp SEMI  &kp BSLH
-                &kp ESC    &kp A   &kp R   &kp S   &kp T   &kp G               &kp M   &kp N   &kp F      &kp I   &kp O     &kp SQT
-                &kp LSHIFT &kp Z   &kp C   &kp D   &kp D   &kp V               &kp K   &kp H   &kp COMMA  &kp DOT &kp FSLH  &kp RSHIFT
+                &kp ESC    &kp A   &kp R   &kp S   &kp T   &kp G               &kp M   &kp N   &kp E      &kp I   &kp O     &kp SQT
+                &kp LSHIFT &kp Z   &kp X   &kp C   &kp D   &kp V               &kp K   &kp H   &kp COMMA  &kp DOT &kp FSLH  &kp RSHIFT
                                             &kp EQUAL  &kp PLUS                &kp LBKT  &kp RBKT
                                             &kp SPACE  &kp LGUI                &kp BSPC  &kp RET
                                             &mo LWR    &kp F18                 &kp F18   &mo RSE
                                             &kp LCTRL  &kp LALT                &kp RALT  &kp RCTRL
             >;
-        };
+        }; 
 
         lower_layer {
             bindings = <
                 &kp F12 &kp F1 &kp F2   &kp F3   &kp F4    &kp F5                &kp F6 &kp F7   &kp F8     &kp F9    &kp F10     &kp F11
                 &trans  &trans &trans   &kp UP   &trans    &trans                &trans &trans   &kp UP     &trans    &trans      &trans
                 &trans  &trans &kp LEFT &kp DOWN &kp RIGHT &trans                &trans &kp LEFT &kp DOWN   &kp RIGHT &kp RSHIFT  &trans
-                &trans  &kp ! &kp @   &kp #   &kp $    &kp %                     &kp ^ &kp &   &kp *     &kp (    &kp )      &kp _
+                &trans  &kp EXCL &kp AT &kp POUND &kp DOLLAR   &kp PERCENT      &kp CARET &kp AMPS &kp STAR &kp LPAR    &kp RPAR &kp UNDER
                                &kp BSLH &kp FSLH                                                 &trans     &trans
                                                  &trans    &trans               &trans &trans
                                                  &trans    &trans               &trans &mo ADJ
