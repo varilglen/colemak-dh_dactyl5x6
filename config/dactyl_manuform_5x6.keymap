@@ -73,7 +73,7 @@
                 &kp LSHIFT &kp Z   &kp X   &kp C   &kp V   &kp B               &kp N   &kp M   &kp COMMA  &kp DOT &kp FSLH  &kp RSHIFT
                                             &kp EQUAL  &kp PLUS                &kp LBKT  &kp RBKT
                                             &kp SPACE   &kp LGUI               &kp BSPC  &kp RET   
-                                            &mo LWR    &kp F18                 &kp F18   &to QWE
+                                            &mo LWR    &kp F18                 &kp F18   &to DEFAULT
                                             &kp LCTRL  &kp LALT                &kp RALT  &kp RCTRL
             >;
         };
