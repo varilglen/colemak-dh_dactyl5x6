@@ -7,22 +7,35 @@
 #define LWR 1
 #define RSE 2
 #define ADJ 3
+#define QWE 4
+
 
 / {
 
+
+behaviors {
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LSHIFT>, <&kp CAPS>;
+        };
+       };
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+                default_layer {
+                
             bindings = <
                 &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5              &kp N6  &kp N7  &kp N8     &kp N9  &kp N0    &kp MINUS
                 &kp TAB    &kp Q   &kp W   &kp F   &kp P   &kp B               &kp J   &kp L   &kp U      &kp Y   &kp SEMI  &kp BSLH
-                &kp ESC    &kp A   &kp R   &kp S   &kp T   &kp G               &kp M   &kp N   &kp E      &kp I   &kp O     &kp SQT
-                &kp LSHIFT &kp Z   &kp X   &kp C   &kp D   &kp V               &kp K   &kp H   &kp COMMA  &kp DOT &kp FSLH  &kp RSHIFT
+                &td0       &kp A   &kp R   &kp S   &kp T   &kp G               &kp M   &kp N   &kp E      &kp I   &kp O     &kp SQT
+                &kp LCTRL  &kp Z   &kp X   &kp C   &kp D   &kp V               &kp K   &kp H   &kp COMMA  &kp DOT &kp FSLH  &kp RSHIFT
                                             &kp EQUAL  &kp PLUS                &kp LBKT  &kp RBKT
-                                            &kp SPACE  &kp LGUI                &kp BSPC  &kp RET
-                                            &mo LWR    &kp F18                 &kp F18   &mo RSE
-                                            &kp LCTRL  &kp LALT                &kp RALT  &kp RCTRL
+                                            &kp SPACE  &mo LWR                &kp BSPC  &kp RET
+                                            &kp LGUI   &kp F18                 &kp F18   &mo RSE
+                                            &kp LALT   &kp ESC                &kp RALT  &kp RCTRL
             >;
         }; 
 
@@ -41,7 +54,7 @@
 
         raise_layer {
             bindings = <
-                &trans  &trans &trans &trans &trans   &trans                &trans &trans &trans &trans &trans &trans
+                &tog QWE  &tog DEFAULT &trans &trans &trans   &trans                &trans &trans &trans &trans &trans &trans
                 &trans  &trans &trans &trans &trans   &trans                &trans &trans &trans &trans &trans &kp K_VOL_UP
                 &trans  &trans &trans &trans &trans   &trans                &trans &trans &trans &trans &trans &kp K_VOL_DN
                 &trans  &trans &trans &trans &trans   &trans                &trans &trans &trans &trans &trans &kp K_MUTE
@@ -62,6 +75,18 @@
                                                       &none &none             &none &none
                                                       &none &none             &none &none
                                                       &none &none             &none &none
+            >;
+        };
+        QWERTY_LAYER {
+            bindings = <
+                &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5              &kp N6  &kp N7  &kp N8     &kp N9  &kp N0    &kp MINUS
+                &kp TAB    &kp Q   &kp W   &kp E   &kp R   &kp T               &kp Y   &kp U   &kp I      &kp O   &kp SEMI  &kp BSLH
+                &kp ESC    &kp A   &kp S   &kp D   &kp F   &kp G               &kp H   &kp J   &kp K      &kp L   &kp P  &kp SQT
+                &kp LSHIFT &kp Z   &kp X   &kp C   &kp V   &kp B               &kp N   &kp M   &kp COMMA  &kp DOT &kp FSLH  &kp RSHIFT
+                                            &kp EQUAL  &kp PLUS                &kp LBKT  &kp RBKT
+                                            &kp SPACE   &kp LGUI               &kp BSPC  &kp RET   
+                                            &mo LWR    &kp F18                 &kp F18   &to DEFAULT
+                                            &kp LCTRL  &kp LALT                &kp RALT  &kp RCTRL
             >;
         };
     };
