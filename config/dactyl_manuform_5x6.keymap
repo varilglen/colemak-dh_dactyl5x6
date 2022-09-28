@@ -33,9 +33,9 @@ behaviors {
                 &td0       &kp A   &kp R   &kp S   &kp T   &kp G               &kp M   &kp N   &kp E      &kp I   &kp O     &kp SQT
                 &kp LCTRL  &kp Z   &kp X   &kp C   &kp D   &kp V               &kp K   &kp H   &kp COMMA  &kp DOT &kp FSLH  &kp RSHIFT
                                             &kp EQUAL  &kp PLUS                &kp LBKT  &kp RBKT
-                                            &kp SPACE  &kp LGUI                &kp BSPC  &kp RET
-                                            &mo LWR    &kp F18                 &kp F18   &mo RSE
-                                            &kp LALT  &kp ESC                &kp RALT  &kp RCTRL
+                                            &kp SPACE  &kp LWR                &kp BSPC  &kp RET
+                                            &mo LGUI   &kp F18                 &kp F18   &mo RSE
+                                            &kp LALT   &kp ESC                &kp RALT  &kp RCTRL
             >;
         }; 
 
